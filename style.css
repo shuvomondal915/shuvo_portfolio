@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: "damion",cursive; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f5f5;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 50px;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+.logo {
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+}
+
+
+/* main section styling starts here  */
+
+.main {
+    width: 100%;
+    height: 500px;
+    padding: 5%;
+    background: url('./image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main img {
+    height: 450px;
+}
+
+.main .main_text p:nth-child(1) {
+    font-weight: bold;
+    color: #403e3e;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.main .main_text p:nth-child(2) {
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.main .main_text p:nth-child(3) {
+    color: #413131;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin: 0 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #a8ce1d;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.hire_btn:hover {
+    background-color: teal;
+    color: white;
+}
+
+.download_cv {
+    background-color: teal;
+    color: white;
+}
+
+.download_cv:hover {
+    background-color: white;
+    color: teal;
+}
+
+
+/* about section css styling starts here  */
+
+.about img {
+    height: 300px;
+    margin: auto 60px 0;
+}
+
+.about {
+    background-color: #7e7d7d;
+    width: 80%;
+    height: 330px;
+    margin: -7% auto 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 60%;
+    text-align: center;
+}
+
+.about-text p:nth-child(1) {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about-text p:nth-child(2) {
+    font-size: 13px;
+    color: white;
+}
+
+.about-text p:nth-child(3) {
+    font-size: 16px;
+    color: white;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.button-hire-btn {
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    color: teal;
+}
+
+.button-download-cv {
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+}
+
+.button-hire-btn:hover {
+    background-color: teal;
+    color: white
+}
+
+.button-download-cv:hover {
+    background-color: white;
+    color: teal;
+}
+
+
+/* service section styling starts here */
+
+.service_container {
+    height: 600px;
+    width: 80vw;
+    margin: 100px auto;
+}
+
+.service_container .text_content h2 {
+    margin-bottom: 10px;
+}
+
+.service_container .text_content p {
+    margin: 15px 0;
+    color: #403e3e
+}
+
+.service_container .cart_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_container .cart_container .cart {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.service_container .cart_container .cart img {
+    width: 40px;
+}
+
+.service_container .cart_container .cart h2 {
+    margin: 20px 0;
+}
+
+.service_container .cart_container .cart p {
+    text-align: justify;
+}
+
+.service_container .cart_container .cart button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(151, 240, 8);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.service_container .cart_container .cart_1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('./image/web1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service_container .cart_container .cart_2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('./image/web2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service_container .cart_container .cart_3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('./image/app.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service_container .cart_container .cart_1:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('./image/web1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service_container .cart_container .cart_2:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('./image/web2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service_container .cart_container .cart_3:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('./image/app.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* contact section markup starts here */
+
+.contact {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./image/contactbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact h2 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    width: 200px;
+    height: 40px;
+    background-color: #ffff;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3aeae;
+}
+
+footer p {
+    margin: 30px 0;
+}
+
+footer .social_icons {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social_icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+footer .social_icons a:nth-child(1):hover {
+    background-color: #0A82ED;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+footer .social_icons a:nth-child(3):hover {
+    background-color: #009DEC;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+footer .social_icons a:nth-child(2):hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+footer .social_icons a:nth-child(4):hover {
+    background-color: #FF0000;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
