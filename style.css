@@ -351,16 +351,18 @@ footer .social_icons a {
     transition: all ease 0.5s;
 }
 
+footer .social_icons a:nth-child(1) {
+    color: #0A82ED;
+}
+
 footer .social_icons a:nth-child(1):hover {
     background-color: #0A82ED;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
-footer .social_icons a:nth-child(3):hover {
-    background-color: #009DEC;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    color: white;
+footer .social_icons a:nth-child(2) {
+    color: #bc1888;
 }
 
 footer .social_icons a:nth-child(2):hover {
@@ -369,8 +371,67 @@ footer .social_icons a:nth-child(2):hover {
     color: white;
 }
 
+footer .social_icons a:nth-child(3) {
+    color: #009DEC;
+}
+
+footer .social_icons a:nth-child(3):hover {
+    background-color: #009DEC;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+footer .social_icons a:nth-child(4) {
+    color: #FF0000;
+}
+
 footer .social_icons a:nth-child(4):hover {
     background-color: #FF0000;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     color: white;
+}
+
+
+/* mobile responsive style css starts here */
+
+@media(max-width:768px) {
+    header nav ul {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+        height: 750px;
+        padding: 10% 0;
+    }
+    .main .main_text p:nth-child(2) {
+        font-size: 32px;
+    }
+    .main img {
+        width: 320px;
+        height: auto;
+    }
+    .about {
+        flex-direction: column;
+        width: 93%;
+        height: 600px;
+    }
+    .about .about-text {
+        width: 100%;
+    }
+    .service_container {
+        height: 1300px;
+    }
+    .service_container .cart_container .cart {
+        margin: 15px 0;
+    }
+    .cart_container {
+        flex-direction: column;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+    footer p {
+        text-align: center;
+        padding: 0 15px;
+    }
 }
